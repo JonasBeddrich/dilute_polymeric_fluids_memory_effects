@@ -15,9 +15,6 @@ Core dependencies are:
 - [MFEM](https://mfem.org/) (4.5 or above)
 - [Hypre](https://computing.llnl.gov/projects/hypre-scalable-linear-solvers-multigrid-methods) (necessary for MFEM)
 - [Metis](http://glaros.dtc.umn.edu/gkhome/metis/metis/overview) (necessary for MFEM)
-- [GLVis](https://glvis.org/) (only necessary for real-time visualization in MFEM)
-
-See also [BUILD-MFEM.md](./BUILD-MFEM.md) on how to install the dependencies.
 
 ## Build instructions
 1. Clone the repository
@@ -37,18 +34,22 @@ See also [BUILD-MFEM.md](./BUILD-MFEM.md) on how to install the dependencies.
    make -j
    ```
 
-
 ## Usage
 
-Run the executables for solving the Fokker-Planck equation
-```bash
-cd applications
-./fp-spherical [<options>]
-```
-or the Navier-Stokes-Fokker-Planck system
+Run the executables for solving the Navier-Stokes-Fokker-Planck equation
 ```bash
 cd applications
 ./ns-fp-spherical [<options>]
+```
+or the time-fractional Navier-Stokes-Fokker-Planck system
+```bash
+cd applications
+./tf-ns-fp-spherical [<options>]
+```
+or for the standard Navier-Stokes system as a comparison baseline 
+```bash
+cd applications
+./ns-testing [<options>]
 ```
 
 ## Authors and acknowledgment
