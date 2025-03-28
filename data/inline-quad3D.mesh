@@ -1,0 +1,9 @@
+MFEM INLINE mesh v1.0
+
+type = hex
+nx = 40
+ny = 40
+nz = 40
+sx = 1.0
+sy = 1.0
+sz = 1.0
